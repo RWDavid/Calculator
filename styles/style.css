@@ -1,0 +1,129 @@
+#calculator-frame {
+    display: grid;
+    grid-template-rows: 2fr 7fr;
+    margin: 100px auto;
+    border: 5px black solid;
+    height: 600px;
+    width: 400px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+#display-panel {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#history {
+    text-align: right;
+    color: gray;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+#expression {
+    text-align: right;
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+#buttons {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "ac c del div"
+                         "d7 d8 d9 mult"
+                         "d4 d5 d6 minus"
+                         "d1 d2 d3 plus"
+                         "d0 d0 point equal";
+    background-color: royalblue;
+    padding: 5px 5px;
+}
+
+#buttons > button {
+    border: 2px solid greenyellow;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+
+#all-clear {
+    grid-area: ac;
+}
+
+#clear {
+    grid-area: c;
+}
+
+#delete {
+    grid-area: del;
+}
+
+#add {
+    grid-area: plus;
+}
+
+#subtract {
+    grid-area: minus;
+}
+
+#multiply {
+    grid-area: mult;
+}
+
+#divide {
+    grid-area: div
+}
+
+#point {
+    grid-area: point;
+}
+
+#equal {
+    grid-area: equal;
+    border-bottom-right-radius: 10px;
+}
+
+#digit-0 {
+    grid-area: d0;
+    border-bottom-left-radius: 10px;
+}
+
+#digit-1 {
+    grid-area: d1;
+}
+
+#digit-2 {
+    grid-area: d2;
+}
+
+#digit-3 {
+    grid-area: d3;
+}
+
+#digit-4 {
+    grid-area: d4;
+}
+
+#digit-5 {
+    grid-area: d5;
+}
+
+#digit-6 {
+    grid-area: d6;
+}
+
+#digit-7 {
+    grid-area: d7;
+}
+
+#digit-8 {
+    grid-area: d8;
+}
+
+#digit-9 {
+    grid-area: d9;
+}
