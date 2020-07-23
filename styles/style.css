@@ -1,3 +1,7 @@
+body {
+    background-image: url("../images/background.png")
+}
+
 #calculator-frame {
     display: grid;
     grid-template-rows: 2fr 7fr;
